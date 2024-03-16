@@ -132,6 +132,10 @@
     font-size: 12px;
 }
 
+.collections{
+    width: 80%;
+}
+
 .collections h1{
     font-weight: 600;
 }
@@ -211,6 +215,70 @@
 .content h4{
     font-weight: 400;
     letter-spacing: 0.5px;
+}
+
+.localities{
+    width: 80%;
+}
+
+.localities h1{
+    font-weight: 600;
+    word-spacing: 3px;
+}
+
+.localities_card_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 1.5rem;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0.5px 0.5px 2px rgb(224, 224, 224);
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 15px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 2px rgb(224, 224, 224);
+}
+
+.card h4{
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.localities_card_container .card span{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: gray;
+}
+
+.see_more_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.explore{
+    width: 80%;
+}
+
+.explore h1{
+    font-weight: 600;
+    word-spacing: 3px;
+}
+
+.explore_card_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
 }
 
 .get__the_app{
@@ -439,6 +507,9 @@
 }
 
 @media only screen and (max-width: 900px){
+    .localities_card_container{
+        grid-template-columns: 1fr 1fr;
+    }
     .navigation_container{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -464,6 +535,9 @@
 }
 
 @media only screen and (max-width: 600px){
+    .localities_card_container{
+        grid-template-columns: 1fr;
+    }
     .navigation_container{
         grid-template-columns: 1fr 1fr;
     }
